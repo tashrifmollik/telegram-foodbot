@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-foodbot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: ${TELEGRAM_TOKEN}
+      - key: OPENAI_API_KEY
+        value: ${OPENAI_API_KEY}
